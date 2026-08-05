@@ -1,37 +1,117 @@
-# Desenvolvendo o Dio Bank
-desenvolvido por [Nathally Souza](https://github.com/nathyts)
+# 💳 Desenvolvendo o Dio Bank
 
-#### Projeto desenvolvido com conceitos básicos de typescript
+Projeto desenvolvido durante o curso de **React + TypeScript**, com o objetivo de criar uma aplicação bancária simples aplicando conceitos de autenticação, gerenciamento de estado global e persistência de dados.
 
-### Tecnologias
-- Typescript
+## 🚀 Sobre o projeto
 
-### Como rodar o projeto
+O Dio Bank é uma aplicação que simula um sistema bancário com autenticação de usuário.
 
-1 - Clone o repositório
+Durante o desenvolvimento foram aplicados conceitos como:
 
-2 - Instale as dependeências
-    
-    npm install
+- TypeScript
+- React Hooks
+- Context API
+- LocalStorage
+- Rotas protegidas
+- Validação de login
+- Componentização
+- Testes unitários
 
-3 - Execute o projeto
+## ✨ Funcionalidades
 
-    npm start
+### 🔐 Sistema de Login
 
-#### Desafios
-[ ] Incluir validação da senha no campo de login
-  - Para logar, além do email faça a validação com a senha informada pelo usuário.
-  - Durante a implementação, aplique o TDD e escreva os testes unitários para a nova validação
+- Login utilizando email e senha
+- Validação das credenciais informadas pelo usuário
+- Armazenamento dos dados do usuário no LocalStorage
+- Usuário permanece autenticado após atualizar a página
 
-[ ] Implemente um sistema de login com a Context API
-  - Seguindo os exemplos demonstrados ao longo do curso, crie um estado global para realizar o login
-  - Utilize o localStorage para armazenar os dados do usuário ao logar
-  - Caso os dados do usuário existam no localStorage, a tela de login não deve ser exibida
+### 🌎 Context API
 
-[ ] Crie uma página para exibir as informações do usuário
-  - Crie uma página onde será exibido o nome, email
-  - Esta página só poderá ser acessada caso a usuária esteja logada
-  - Caso a usuária não esteja logada, deve ser mantida na página com a tela de login
-  - Escreva os testes unitários para as funções criadas ou refatoradas.
+Foi criado um contexto global para gerenciamento da autenticação:
 
-[ ] Fazer o deploy no Netlify e compartilhar o link da página
+- Controle do estado de login
+- Compartilhamento das informações do usuário entre componentes
+- Persistência da sessão através do LocalStorage
+
+### 👤 Página de informações do usuário
+
+Página protegida onde são exibidos:
+
+- Nome do usuário
+- Email cadastrado
+
+A página só pode ser acessada caso o usuário esteja autenticado.
+
+Caso não exista uma sessão ativa, o usuário é direcionado novamente para a tela de login.
+
+## 🔑 Dados para teste
+
+Utilize as credenciais abaixo para acessar a aplicação:
+
+**Email**
+```
+catz@dio.bank
+```
+
+**Senha**
+```
+123456
+```
+
+## 🛠 Tecnologias utilizadas
+
+- React
+- TypeScript
+- React Router DOM
+- Context API
+- LocalStorage
+- Jest / Testing Library
+- CSS
+
+## 📦 Como executar o projeto
+
+### 1 - Clone o repositório
+
+```bash
+git clone https://github.com/Catyz/dio-bank.git
+```
+
+### 2 - Instale as dependências
+
+```bash
+npm install
+```
+
+### 3 - Execute o projeto
+
+```bash
+npm start
+```
+
+A aplicação estará disponível em:
+
+```
+http://localhost:3000
+```
+
+## 🌐 Deploy
+
+Projeto publicado utilizando **Netlify**.
+
+Link:
+
+```
+adicione-aqui-o-link-do-netlify
+```
+
+## 🧪 Testes
+
+Foram desenvolvidos testes unitários para validar as funções implementadas e garantir o funcionamento correto da autenticação.
+
+## 👩‍💻 Desenvolvido por
+
+**Catarina Dalsan**
+
+GitHub:
+https://github.com/Catyz
