@@ -2,7 +2,7 @@ import { Button, Text } from "@chakra-ui/react"
 import CardInfo from "../components/CardInfo"
 import { useEffect, useState} from "react"
 import { api } from "../api"
-import { Navigate, useNavigate, useParams} from "react-router-dom"
+import {useNavigate, useParams} from "react-router-dom"
 
 interface UserData {
     email: string
