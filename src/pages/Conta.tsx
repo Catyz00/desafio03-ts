@@ -1,4 +1,4 @@
-import { Center, SimpleGrid, Spinner } from "@chakra-ui/react"
+import { Button, Center, SimpleGrid, Spinner } from "@chakra-ui/react"
 import { useParams, useNavigate } from "react-router-dom"
 import { useContext, useEffect, useState } from "react"
 import { api } from "../api"
@@ -53,8 +53,11 @@ const Conta = () => {
                             <CardInfo mainContent='Saldo' content={`R$ ${userData.balance}`}/>
                         </>
                     )
+                    
                 }
-            </SimpleGrid>    
+                <Button onClick={() => navigate(`/conta/${id}/infoconta`)}>Configurações</Button>
+            </SimpleGrid>  
+            
         </Center>
     )
 }
